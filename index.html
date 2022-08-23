@@ -546,5 +546,34 @@
       </section>
     </footer>
     <script src="./js/modal.js"></script>
+    <div class="js-menu__container is-open">
+      <button class="js-menu__close">
+        <svg width="40" height="40">
+          <use href="images/icons.svg#mobile-menu-close"></use>
+        </svg>
+      </button>
+      <div class="aria-expanded">
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="index.html">Agencja</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-active" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="js-menu__open">
+      <svg width="40" height="40">
+        <use href="images/icons.svg#mobile-menu-open"></use>
+      </svg>
+    </button>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

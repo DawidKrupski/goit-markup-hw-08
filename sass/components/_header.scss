@@ -6,42 +6,110 @@
   }
 
   &__contact {
-    display: flex;
+    display: none;
   }
+}
 
-  &__icons {
-    display: flex;
-    align-items: center;
-  }
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid getColor("header-border");
 
-  &__mail {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: getColor("info-color");
-    text-decoration: none;
+    &__elements {
+      display: flex;
+    }
 
-    &:hover,
-    &:focus {
-      color: getColor("link-focus");
-      fill: getColor("link-focus");
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__contact {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &__icons {
+      display: flex;
+    }
+
+    &__mail {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17px;
+      letter-spacing: 0.02em;
+      color: getColor("info-color");
+      text-decoration: none;
+      justify-content: flex-start;
+
+      &:hover,
+      &:focus {
+        color: getColor("link-focus");
+        fill: getColor("link-focus");
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &__telephone {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17px;
+      letter-spacing: 0.02em;
+      color: getColor("info-color");
+      text-decoration: none;
+      justify-content: flex-start;
+
+      &:hover,
+      &:focus {
+        color: getColor("link-focus");
+        fill: getColor("link-focus");
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
     }
   }
+}
 
-  &__telephone {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: getColor("info-color");
-    text-decoration: none;
-    margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .header {
+    border-bottom: 1px solid getColor("header-border");
 
-    &:hover,
-    &:focus {
-      color: getColor("link-focus");
-      fill: getColor("link-focus");
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__elements {
+      display: flex;
+    }
+
+    &__contact {
+      display: flex;
+    }
+
+    &__icons {
+      display: flex;
+      align-items: center;
+    }
+
+    &__mail {
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: getColor("info-color");
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: getColor("link-focus");
+        fill: getColor("link-focus");
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &__telephone {
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: getColor("info-color");
+      text-decoration: none;
+      margin-left: 30px;
+
+      &:hover,
+      &:focus {
+        color: getColor("link-focus");
+        fill: getColor("link-focus");
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
     }
   }
 }
