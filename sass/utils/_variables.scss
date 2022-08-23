@@ -1,0 +1,26 @@
+$colors: (
+  "html-background": #757575,
+  "main-color": #2196f3,
+  "background": #ffffff,
+  "second-background": #2f303a,
+  "thid-background": #f5f4fa,
+  "text": #212121,
+  "second-text": #ffffff,
+  "focus-color": #ffffff,
+  "button-focus": #2196f3,
+  "link-focus": #2196f3,
+  "info-color": #757575,
+  "article-text": #757575,
+  "footer-kontakt": rgba(255, 255, 255, 0.6),
+  "border-color": #eeeeee,
+  "header-border": #ececec,
+  "icon-background": rgba(255, 255, 255, 0.1),
+  "icon-color": #eeeeee,
+  "second-icons-color": #afb1b8,
+  "hidden-box-background": #2196f3e5,
+  "work-description-background": #2f303acc,
+  "placeholder-color": #75757580,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

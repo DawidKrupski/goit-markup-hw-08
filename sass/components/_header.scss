@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1px solid getColor("header-border");
+
+  &__elements {
+    display: flex;
+  }
+
+  &__contact {
+    display: flex;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mail {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor("info-color");
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: getColor("link-focus");
+      fill: getColor("link-focus");
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__telephone {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor("info-color");
+    text-decoration: none;
+    margin-left: 30px;
+
+    &:hover,
+    &:focus {
+      color: getColor("link-focus");
+      fill: getColor("link-focus");
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

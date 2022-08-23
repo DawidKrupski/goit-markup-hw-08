@@ -1,0 +1,36 @@
+html {
+  background-color: getColor("html-background");
+}
+
+.body {
+  font-family: "roboto", "raleway", sans-serif;
+  background: getColor("background");
+  font-size: 14px;
+  color: getColor("text");
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  width: 1600px;
+  height: 100%;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.icons {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+  fill: getColor("info-color");
+}
