@@ -1,20 +1,73 @@
-// .slogan {
-//   background: getColor("second-background");
-//   margin-bottom: 94px;
-//   padding: 200px 0;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/background-image.jpg);
+.slogan {
+  background: getColor("second-background");
+  margin-bottom: 94px;
+  padding: 118px 0 118px 0;
+  object-fit: scale-down;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-//   &__label {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: getColor("second-text");
-//   }
-// }
+  &__label {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor("second-text");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slogan {
+    background: getColor("second-background");
+    margin-bottom: 94px;
+    padding: 118px 0 118px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__label {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: getColor("second-text");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan {
+    background: getColor("second-background");
+    margin-bottom: 94px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__label {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: getColor("second-text");
+    }
+  }
+}

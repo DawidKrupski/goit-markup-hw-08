@@ -28,9 +28,9 @@
   .article {
     list-style: none;
     display: flex;
+    gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
 
     &__header {
       font-weight: 700;
@@ -42,6 +42,7 @@
     &__description {
       color: getColor("article-text");
       margin-bottom: 0;
+      width: 354px;
     }
 
     &__icon {
@@ -72,6 +73,7 @@
     &__description {
       color: getColor("article-text");
       margin-bottom: 0;
+      width: 270px;
     }
 
     &__icon {

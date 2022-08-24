@@ -15,9 +15,11 @@ html {
   margin: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .body {
     width: 768px;
+    height: 100%;
+    margin: auto;
   }
 }
 
@@ -41,9 +43,9 @@ html {
   padding: 0px 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     margin: auto;
     align-items: center;
     padding: 0px 15px;
@@ -52,7 +54,7 @@ html {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
     align-items: center;
     padding: 0px 15px;
