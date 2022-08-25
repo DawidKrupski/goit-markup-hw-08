@@ -23,50 +23,16 @@
 
 @media screen and (min-width: 768px) {
   .logo {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    text-decoration: none;
     margin-right: 83px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    &__first-word {
-      color: getColor("main-color");
-    }
-
-    &__second-word {
-      color: getColor("text");
-    }
-
-    &__third-word {
-      color: getColor("second-text");
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
-    font-family: "Raleway";
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-    margin-right: 93px;
     padding-top: 24px;
+    margin-right: 93px;
     padding-bottom: 25px;
-
-    &__first-word {
-      color: getColor("main-color");
-    }
-
-    &__second-word {
-      color: getColor("text");
-    }
-
-    &__third-word {
-      color: getColor("second-text");
-    }
   }
 }

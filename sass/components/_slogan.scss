@@ -2,12 +2,11 @@
   background: getColor("second-background");
   margin-bottom: 94px;
   padding: 118px 0 118px 0;
-  object-fit: scale-down;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background-image.jpg);
+    url(../images/background-image-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -24,50 +23,66 @@
 
 @media screen and (min-width: 768px) {
   .slogan {
-    background: getColor("second-background");
-    margin-bottom: 94px;
-    padding: 118px 0 118px 0;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &__label {
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 1.62;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: getColor("second-text");
-    }
+    background-image: url(../images/background-image-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .slogan {
-    background: getColor("second-background");
-    margin-bottom: 94px;
     padding: 200px 0;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/background-image-computer.jpg);
 
     &__label {
-      font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: getColor("second-text");
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .slogan {
+    background-image: url(../images/background-image-mobile@2.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 288dpi) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 3dppx) and (min-width: 320px) and (max-width: 767px) {
+  .slogan {
+    background-image: url(../images/background-image-mobile@3.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .slogan {
+    background-image: url(../images/background-image-tablet@2.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 288dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 3dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .slogan {
+    background-image: url(../images/background-image-tablet@3.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .slogan {
+    background-image: url(../images/background-image-computer@2.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+  screen and (min-resolution: 288dpi) and (min-width: 1200px),
+  screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+  .slogan {
+    background-image: url(../images/background-image-computer@3.jpg);
   }
 }

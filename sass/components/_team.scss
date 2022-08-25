@@ -80,165 +80,28 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    background: getColor("thid-background");
-    margin-top: 94px;
-    padding-bottom: 94px;
-
-    &__header {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      margin-bottom: 50px;
-      padding-top: 94px;
-      text-align: center;
-    }
-
-    &__member {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-      margin-bottom: 10px;
-    }
-
-    &__profession {
-      font-size: 16px;
-      line-height: 1.19;
-      color: getColor("info-color");
-    }
-
-    &__description {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
     &__img {
-      display: block;
-      object-fit: cover;
       width: 354px;
       height: 374px;
     }
   }
 
   .team-list {
-    list-style: none;
-    display: flex;
-    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-
-    &__element {
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-    }
-  }
-
-  .team-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
-
-    &__list {
-      list-style: none;
-    }
-
-    &__link {
-      width: 44px;
-      height: 44px;
-      fill: getColor("second-icons"-color);
-      border: 0px solid getColor("thid-background");
-      border-radius: 50%;
-
-      &:hover,
-      &:focus {
-        background-color: getColor("main-color");
-        fill: getColor("focus-color");
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    background: getColor("thid-background");
-    margin-top: 94px;
-    padding-bottom: 94px;
-
-    &__header {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      margin-bottom: 50px;
-      padding-top: 94px;
-      text-align: center;
-    }
-
-    &__member {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-      margin-bottom: 10px;
-    }
-
-    &__profession {
-      font-size: 16px;
-      line-height: 1.19;
-      color: getColor("info-color");
-    }
-
-    &__description {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
     &__img {
-      display: block;
-      object-fit: cover;
       width: 270px;
       height: 260px;
     }
   }
 
   .team-list {
-    list-style: none;
-    display: flex;
     justify-content: space-between;
-    text-align: center;
-    flex-direction: row;
-
-    &__element {
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-    }
-  }
-
-  .team-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
-
-    &__list {
-      list-style: none;
-    }
-
-    &__link {
-      width: 44px;
-      height: 44px;
-      fill: getColor("second-icons"-color);
-      border: 0px solid getColor("thid-background");
-      border-radius: 50%;
-
-      &:hover,
-      &:focus {
-        background-color: getColor("main-color");
-        fill: getColor("focus-color");
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
+    flex-wrap: nowrap;
   }
 }
