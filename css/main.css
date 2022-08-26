@@ -727,11 +727,6 @@ html {
     width: 358px;
   }
 }
-.test {
-  display: block;
-  margin: auto;
-}
-
 .portfolio {
   list-style: none;
   display: flex;
@@ -1150,8 +1145,10 @@ html {
   color: #2196f3;
   font-size: 18px;
   line-height: 1.22;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+}
+.mobile-nav__border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-active {
