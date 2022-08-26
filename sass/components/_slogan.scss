@@ -1,6 +1,6 @@
 .slogan {
   background: getColor("second-background");
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   padding: 118px 0 118px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -29,6 +29,7 @@
 
 @media screen and (min-width: 1200px) {
   .slogan {
+    margin-bottom: 94px;
     padding: 200px 0;
     background-image: url(../images/background-image-computer.jpg);
 

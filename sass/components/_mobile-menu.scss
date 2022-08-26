@@ -40,13 +40,12 @@
   font-size: 40px;
   line-height: 1.18px;
   letter-spacing: 0.02em;
-  margin-top: 48px;
+  margin-top: 74px;
   margin-left: 40px;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 76px;
-
+  gap: 72px;
   &__link {
     text-decoration: none;
     color: getColor("text");
@@ -85,6 +84,7 @@
     list-style: none;
     gap: 10px;
     margin-bottom: 48px;
+    margin-top: 32px;
   }
 
   &__media-link {

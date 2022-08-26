@@ -1,15 +1,15 @@
 .team {
   background: getColor("thid-background");
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 30px;
+  padding-bottom: 60px;
 
   &__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    margin-bottom: 30px;
+    padding-top: 60px;
     text-align: center;
   }
 
@@ -29,6 +29,7 @@
   &__description {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: getColor("background");
   }
   &__img {
     display: block;
@@ -84,19 +85,26 @@
       width: 354px;
       height: 374px;
     }
-  }
-
-  .team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    .team-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
+    margin-top: 94px;
+    padding-bottom: 94px;
+
     &__img {
       width: 270px;
       height: 260px;
+    }
+
+    &__header {
+      margin-bottom: 50px;
+      padding-top: 94px;
     }
   }
 

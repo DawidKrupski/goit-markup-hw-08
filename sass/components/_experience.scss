@@ -20,6 +20,7 @@
   }
 
   &__img {
+    display: block;
     width: 450px;
     height: 294px;
   }
@@ -69,16 +70,30 @@
   transform: translateY(-100%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .experience {
+    &__link {
+      width: 354px;
+    }
     &__img {
       width: 354px;
     }
+
+    &__list {
+      &:nth-child(1) {
+        .experience__border {
+          padding-bottom: 56px;
+        }
+      }
+    }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .experience {
+    &__link {
+      width: 370px;
+    }
+
     &__img {
       width: 370px;
     }

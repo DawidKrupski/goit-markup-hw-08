@@ -226,7 +226,7 @@ html {
 }
 .slogan {
   background: #2f303a;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   padding: 118px 0 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-mobile.jpg);
   background-repeat: no-repeat;
@@ -249,6 +249,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .slogan {
+    margin-bottom: 94px;
     padding: 200px 0;
     background-image: url(../images/background-image-computer.jpg);
   }
@@ -315,6 +316,7 @@ html {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
+  text-align: center;
 }
 .article__description {
   color: #757575;
@@ -333,6 +335,9 @@ html {
     gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .article__header {
+    text-align: start;
   }
   .article__description {
     width: 354px;
@@ -395,16 +400,16 @@ html {
 }
 .team {
   background: #f5f4fa;
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 30px;
+  padding-bottom: 60px;
 }
 .team__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 30px;
+  padding-top: 60px;
   text-align: center;
 }
 .team__member {
@@ -421,6 +426,7 @@ html {
 .team__description {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
 }
 .team__img {
   display: block;
@@ -467,15 +473,23 @@ html {
     width: 354px;
     height: 374px;
   }
-  .team-list {
+  .team .team-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
+  .team {
+    margin-top: 94px;
+    padding-bottom: 94px;
+  }
   .team__img {
     width: 270px;
     height: 260px;
+  }
+  .team__header {
+    margin-bottom: 50px;
+    padding-top: 94px;
   }
   .team-list {
     justify-content: space-between;
@@ -483,15 +497,15 @@ html {
   }
 }
 .clients {
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
 .clients__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .clients__list {
@@ -520,6 +534,13 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__header {
+    margin-bottom: 50px;
+  }
   .clients__link {
     width: 170px;
     height: 92px;
@@ -628,6 +649,7 @@ html {
     text-align: inherit;
   }
   .footer__information {
+    margin-left: 0px;
     margin-right: 70px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -697,19 +719,46 @@ html {
     margin-left: 0px;
   }
   .newsletter__form {
+    align-items: baseline;
+    flex-direction: row;
     gap: 12px;
   }
   .newsletter__input {
     width: 358px;
   }
 }
+.test {
+  display: block;
+  margin: auto;
+}
+
 .portfolio {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.portfolio__list:nth-child(1) button {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.portfolio__list:nth-child(2) button {
+  padding-left: 40px;
+  padding-right: 39px;
+}
+.portfolio__list:nth-child(3) button {
+  padding-left: 37px;
+  padding-right: 38px;
+}
+.portfolio__list:nth-child(4) button {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.portfolio__list:nth-child(5) button {
+  padding-left: 27px;
+  padding-right: 26px;
 }
 .portfolio__button {
   font-family: "Roboto";
@@ -720,7 +769,7 @@ html {
   border-radius: 4px;
   border: 0px;
   text-align: center;
-  padding: 6px 22px;
+  padding: 6px 0 6px 0;
   background: #f5f4fa;
 }
 .portfolio__button:hover, .portfolio__button:focus {
@@ -734,6 +783,20 @@ html {
 @media screen and (min-width: 768px) {
   .portfolio {
     justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    gap: 8px;
+  }
+  .portfolio__list:nth-child(n) button {
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 .experience {
@@ -755,6 +818,7 @@ html {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .experience__img {
+  display: block;
   width: 450px;
   height: 294px;
 }
@@ -799,12 +863,21 @@ html {
   transform: translateY(-100%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .experience__link {
+    width: 354px;
+  }
   .experience__img {
     width: 354px;
   }
+  .experience__list:nth-child(1) .experience__border {
+    padding-bottom: 56px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .experience__link {
+    width: 370px;
+  }
   .experience__img {
     width: 370px;
   }
@@ -960,13 +1033,17 @@ html {
 }
 .rules__icon--checked {
   position: absolute;
-  top: 7px;
-  left: 16px;
+  top: 5px;
+  left: 4px;
 }
 
 @media screen and (min-width: 1200px) {
   .rules {
     font-size: 14px;
+  }
+  .rules__icon--checked {
+    top: 7px;
+    left: 16px;
   }
 }
 .form-button {
@@ -1026,12 +1103,12 @@ html {
   font-size: 40px;
   line-height: 1.18px;
   letter-spacing: 0.02em;
-  margin-top: 48px;
+  margin-top: 74px;
   margin-left: 40px;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 76px;
+  gap: 72px;
 }
 .mobile-nav__link {
   text-decoration: none;
@@ -1066,6 +1143,7 @@ html {
   list-style: none;
   gap: 10px;
   margin-bottom: 48px;
+  margin-top: 32px;
 }
 .mobile-nav__media-link {
   text-decoration: none;

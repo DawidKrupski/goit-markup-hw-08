@@ -1,13 +1,13 @@
 .clients {
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  padding-bottom: 60px;
 
   &__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -44,6 +44,13 @@
 
 @media screen and (min-width: 1200px) {
   .clients {
+    margin-top: 94px;
+    padding-bottom: 94px;
+
+    &__header {
+      margin-bottom: 50px;
+    }
+
     &__link {
       width: 170px;
       height: 92px;
