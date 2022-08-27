@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 72px;
+
   &__link {
     text-decoration: none;
     color: getColor("text");
@@ -61,7 +62,7 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-top: 302px;
+    margin-top: 268px;
     gap: 32px;
   }
 

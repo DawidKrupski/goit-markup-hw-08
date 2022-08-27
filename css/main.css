@@ -894,6 +894,7 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 750ms, visibility 750ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
 }
 .backdrop__modal-window {
   position: absolute;
@@ -1118,7 +1119,7 @@ html {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-top: 302px;
+  margin-top: 268px;
   gap: 32px;
 }
 .mobile-nav__telephone {
